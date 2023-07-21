@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Questão 6</title>
+</head>
+<body>
+    <script>
+        function categoria(idade){
+            if(idade<8){
+                return "Infantil"
+            }
+            else if((idade>=8)&&(idade<12)){
+                return "Juvenil"
+            }
+            else{
+                return "Jovem"
+            }
+        }
+
+        const idade = Number(prompt("Idade do nadador: "))
+        alert(categoria(idade))
+    </script>
+</body>
+</html>

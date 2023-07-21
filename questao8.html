@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Questão 8</title>
+</head>
+<body>
+    <script>
+        function emprestimo (renda, valorParcela){
+            const trintaPorcento = (renda/100)*30
+            if(valorParcela>trintaPorcento){
+                return "EMPRÉSTIMO NÃO APROVADO"
+            }
+            else{
+                return "EMPRÉSTISMO APROVADO"
+            }
+        }
+
+        const renda = Number(prompt("Digite a sua renda: "))
+        const parcela = Number(prompt("Digite o vaor da parcela: "))
+
+        alert(emprestimo(renda, parcela))
+    </script>
+</body>
+</html>

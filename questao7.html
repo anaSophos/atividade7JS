@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Questão 7</title>
+</head>
+<body>
+    <script>
+        function convertorMoeda(valor, moeda){
+            if(moeda=="d"){
+                return valor*5.50
+            }
+            else if(moeda=="e"){
+                return valor*7
+            }
+        }
+
+        const valor = Number(prompt("Valor que deseja converter: "))
+        const moeda = prompt("Para qual moeda deseja converter? d-dolar ou e-euro: ")
+
+        alert(`Igual a R$ ${parseFloat(convertorMoeda(valor, moeda)).toFixed(2).replace('.',',')}`)
+    </script>
+</body>
+</html>
